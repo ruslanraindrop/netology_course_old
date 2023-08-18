@@ -1,0 +1,966 @@
+@font-face {
+    font-family: Open Sans;
+    src: url("../fonts/OpenSans-Regular.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Open Sans;
+    src: url("../fonts/OpenSans-Bold.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    list-style-type: none;
+}
+body {
+    min-width: 320px;
+}
+
+.main_header {
+    padding-top: 2.3vw;
+    padding-bottom: 5.7vw;
+}
+
+.container-wrapper {
+    background-image: url("../images/football_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    position: relative;
+    text-align: center;
+}
+
+.container-wrapper::after {
+    content: "";
+    background-color: #0a0e34;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.surface_logo_text {
+    z-index: 2;
+    position: relative;
+    width: 9.8vw;
+    height: 3vw;
+}
+
+.header_text {
+    width: 79.7vw;
+    font-size: 4.68vw;
+    text-transform: uppercase;
+    font-family: Open Sans, Arial, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 2;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vw;
+    box-sizing: border-box;
+}
+
+.left_words {
+    text-align: left;
+    display: block;
+}
+
+.right_words {
+    text-align: right;
+    display: block;
+}
+
+.header_buttons {
+    margin-top: 11vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 35vw;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.button_link {
+    width: 16vw;
+    height: 4vw;
+    border-radius: 50px;
+    text-align: left;
+    background-color: #5e42b0;
+    padding-left: 1.8vw;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.button_link:nth-child(2) {
+    padding-left: 2.5vw;
+}
+
+.logo_button {
+    margin-right: 1.3vw;
+}
+
+.logo_apple {
+    width: 2.4vw;
+    height: 2.8vw;
+}
+
+.logo_google {
+    width: 2.2vw;
+    height: 2.6vw;
+}
+
+.button_text {
+    color: #ffffff;
+    font-size: 0.7vw;
+    line-height: 100%;
+    font-family: Open Sans, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.button_description {
+    font-weight: normal;
+    margin-bottom: 2px;
+}
+
+.button_description_media {
+    font-weight: bold;
+}
+
+.list {
+    position: relative;
+    padding-top: 5.8vw;
+}
+
+.odd_image {
+    margin-left: 20.3vw;
+}
+
+.athlets_image {
+    position: absolute;
+    z-index: 2;
+    width: 28.8vw;
+    margin-top: -2.4vw;
+}
+
+.odd_header {
+    margin-bottom: 2.5vw;
+    padding-left: 52.3vw;
+}
+
+.list_title {
+    font-family: Open Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 4.2vw;
+    line-height: 3vw;
+    color: #e7e7e7;
+    text-transform: uppercase;
+}
+
+.odd_item {
+    padding-left: 52.3vw;
+    padding-right: 10.4vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+.odd_item:nth-child(3n + 2) {
+    background-color: #f6f4fa;
+}
+
+.odd_item:nth-child(3n + 3) {
+    background-color: #5e42b0;
+}
+
+.header_odd_item,
+.header_even_item {
+    display: flex;
+
+    align-items: flex-start;
+}
+
+.even_item {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+.number_item,
+.number_item_another,
+.number_item_even_another {
+    font-family: Open Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.9vw;
+    color: #000000;
+    margin-right: 0.6vw;
+    position: relative;
+}
+
+.number_item::after {
+    content: "";
+    width: 0.9vw;
+    height: 0.2vw;
+    background-color: #5e42b0;
+    position: absolute;
+    display: block;
+    margin-left: 0.05vw;
+}
+
+.number_item_another::after,
+.number_item_even_another::after {
+    background-color: #ffffff;
+    content: "";
+    width: 0.9vw;
+    height: 0.2vw;
+    position: absolute;
+    display: block;
+    margin-left: 0.05vw;
+}
+
+.title_odd_item,
+.title_even_item {
+    font-family: Open Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.9vw;
+    line-height: 1.7vw;
+    color: #c1c1c1;
+    text-transform: uppercase;
+}
+
+.text_odd_item,
+.text_odd_item_another,
+.text_even_item,
+.text_even_item_another {
+    margin-top: 0.9vw;
+
+    color: #000000;
+    font-size: 1vw;
+    font-family: Open Sans, Arial, sans-serif;
+    font-weight: normal;
+}
+
+.text_odd_item_another,
+.text_even_item_another {
+    color: #ffffff;
+}
+
+.even_image {
+    margin-left: 41vw;
+}
+
+.player_image {
+    position: absolute;
+    z-index: 2;
+    width: 50.5vw;
+    margin-top: -2.6vw;
+}
+
+.even_header {
+    margin-bottom: 2.5vw;
+    padding-left: 10vw;
+}
+
+.even_item {
+    padding-left: 10vw;
+    padding-right: 51vw;
+}
+
+.even_item:nth-child(3n + 2) {
+    background-color: #f5f6f7;
+}
+
+.even_item:nth-child(3n + 3) {
+    background-color: #0a0e34;
+}
+
+.number_item_even_another {
+    color: #9173e6;
+}
+
+.cascade,
+.cascade_even {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+}
+
+.cascade_image {
+    width: 50%;
+    overflow: hidden;
+}
+
+.cascade_picture {
+    height: 38vw;
+    display: block;
+}
+
+.number_text {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vw;
+    position: relative;
+    font-family: Open Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.25vw;
+    line-height: 1.7vw;
+    color: #f5f6f7;
+}
+
+.number_text::after {
+    content: "";
+    width: 1.25vw;
+    height: 0.2vw;
+    background-color: #8f7bc8;
+    position: absolute;
+    display: block;
+}
+
+.cascade_content_wrapper {
+    width: 50%;
+    padding-top: 12vw;
+    padding-left: 6.5vw;
+    padding-right: 9.8vw;
+    box-sizing: border-box;
+}
+
+.cascade_number {
+    position: absolute;
+    left: calc(50% - 8.7vw/2);
+    top: 11vw;
+    display: flex;
+    z-index: 2;
+    background-color: #5e42b0;
+    width: 8.7vw;
+    height: 8vw;
+}
+
+.cascade_title {
+    color: #c1c1c1;
+    font-family: Open Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 4.16vw;
+    text-transform: uppercase;
+}
+
+.cascade_description {
+    margin-top: 3.5vw;
+}
+
+.cascade_text {
+    color: #000000;
+    font-family: Open Sans, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1.25vw;
+    line-height: 1.45vw;
+}
+
+.cascade_even {
+    flex-direction: row-reverse;
+}
+
+.footer-wrapper {
+    background-image: url("../images/game_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    position: relative;
+    text-align: center;
+}
+
+.footer-wrapper::after {
+    content: "";
+    background-color: #0a0e34;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.footer_content {
+    padding-top: 12vw;
+    padding-bottom: 2.6vw;
+}
+
+.footer_header {
+    display: flex;
+    align-items: flex-end;
+    width: 43vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-logo {
+    position: relative;
+    z-index: 2;
+    width: 7.1vw;
+    height: 6.7vw;
+    background-color: #6d4dc7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.logo {
+    width: 5.3vw;
+    height: 5.3vw;
+}
+
+.logo_title {
+    margin-left: 1.5vw;
+    text-align: left;
+    z-index: 2;
+}
+
+.logo_title_main {
+    color: #ffffff;
+    font-family: Open Sans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 4.16vw;
+    text-transform: uppercase;
+}
+
+.logo_title_description {
+    color: #a496ca;
+    font-family: Open Sans, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+
+.footer_buttons {
+    margin-top: 7.8vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 13.5vw;
+    position: relative;
+    width: 35vw;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 641px) and (max-width: 959px) {
+    .main_header {
+        padding-top: 4.9vw;
+        padding-bottom: 11.8vw;
+    }
+
+    .container-wrapper {
+        background-image: url("../images/football_1280.jpg");
+        background-position: center;
+    }
+
+    .surface_logo_text {
+        width: 26vw;
+        height: 7.4vw;
+    }
+
+    .header_text {
+        width: 77.2vw;
+        font-size: 8.3vw;
+        margin-top: 23.5vw;
+    }
+
+    .right_words {
+        padding-left: 12.5vw;
+        text-align: left;
+    }
+
+    .header_buttons {
+        margin-top: 40.5vw;
+        width: 84.4vw;
+    }
+
+    .button_link {
+        width: 40vw;
+        height: 10vw;
+        padding-left: 5.4vw;
+    }
+
+    .button_link:nth-child(2) {
+        padding-left: 7.8vw;
+    }
+
+    .logo_button {
+        margin-right: 3.2vw;
+    }
+
+    .logo_apple {
+        width: 4.9vw;
+        height: 5.8vw;
+    }
+
+    .logo_google {
+        width: 4.6vw;
+        height: 5.8vw;
+    }
+
+    .button_text {
+        font-size: 1.8vw;
+        margin-bottom: 5px;
+    }
+
+    .list {
+        padding-top: 11vw;
+    }
+
+    .odd_image {
+        margin-left: -18vw;
+    }
+
+    .athlets_image {
+        width: 56.5vw;
+        margin-top: 7.5vw;
+    }
+
+    .odd_header {
+        margin-bottom: 7.4vw;
+        padding-left: 38vw;
+    }
+
+    .list_title {
+        font-size: 10.4vw;
+        line-height: 7.8vw;
+    }
+
+    .odd_item {
+        padding-left: 38.02vw;
+        padding-right: 4.3vw;
+        padding-top: 5.4vw;
+        padding-bottom: 5.3vw;
+    }
+
+    .number_item,
+    .number_item_another,
+    .number_item_even_another {
+        font-size: 2.3vw;
+        margin-right: 1.3vw;
+    }
+
+    .number_item::after,
+    .number_item_another::after,
+    .number_item_even_another::after {
+        width: 2.6vw;
+        height: 0.5vw;
+    }
+
+    .title_odd_item,
+    .title_even_item {
+        font-size: 4.1vw;
+        line-height: 4vw;
+    }
+
+    .text_odd_item,
+    .text_odd_item_another,
+    .text_even_item,
+    .text_even_item_another {
+        margin-top: 2.7vw;
+
+        font-size: 2.08vw;
+        line-height: 3.6vw;
+    }
+
+    .even_image {
+        margin-left: 43.2vw;
+    }
+
+    .player_image {
+        width: 56.7vw;
+        margin-top: -1vw;
+    }
+
+    .even_header {
+        margin-bottom: 7.1vw;
+        padding-left: 4.8vw;
+    }
+
+    .even_item {
+        padding-left: 4.8vw;
+        padding-right: 40vw;
+        padding-bottom: 5.3vw;
+    }
+
+    .cascade,
+    .cascade_even {
+        flex-direction: column;
+    }
+
+    .cascade_image {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .cascade_picture {
+        height: 76.1vw;
+    }
+
+    .number_text {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 6vw;
+        font-size: 3.1vw;
+    }
+
+    .number_text::after {
+        width: 3.1vw;
+        height: 0.5vw;
+        margin-top: 1.2vw;
+        margin-left: 0.1vw;
+    }
+
+    .cascade_content_wrapper {
+        width: 100%;
+        padding-left: 4.2vw;
+        padding-top: 10.5vw;
+        padding-bottom: 13vw;
+        padding-right: 9.1vw;
+    }
+
+    .cascade_number {
+        width: 15.1vw;
+        height: 15.1vw;
+        top: 64.4vw;
+        left: 4.2vw;
+    }
+
+    .cascade_title {
+        font-size: 10.4vw;
+    }
+
+    .cascade_description {
+        margin-top: 4.5vw;
+    }
+
+    .cascade_text {
+        font-size: 3.1vw;
+        line-height: 3.6vw;
+    }
+
+    .footer-wrapper {
+        background-image: url("../images/game_1280.jpg");
+    }
+
+    .footer_content {
+        padding-top: 16.2vw;
+        padding-bottom: 2.8vw;
+    }
+
+    .footer_header {
+        flex-direction: column;
+        width: 91.8vw;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-logo {
+        width: 16.9vw;
+        height: 17.7vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 13.4vw;
+        height: 13.4vw;
+    }
+
+    .logo_title {
+        margin-left: 0;
+        margin-top: 10.3vw;
+        text-align: center;
+    }
+
+    .logo_title_main {
+        font-size: 10.4vw;
+    }
+
+    .logo_title_description {
+        font-size: 4.6vw;
+    }
+
+    .footer_buttons {
+        margin-top: 36.4vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 7vw;
+        width: 84.6vw;
+    }
+}
+
+@media (max-width: 640px) {
+    .main_header {
+        padding-top: 10vw;
+        padding-bottom: 25.9vw;
+    }
+
+    .container-wrapper {
+        background-image: url("../images/football_767.jpg");
+        background-position: center;
+    }
+
+    .surface_logo_text {
+        width: 41vw;
+        height: 11.8vw;
+    }
+
+    .header_text {
+        width: 79.6vw;
+        font-size: 8.7vw;
+        margin-top: 44vw;
+        margin-left: 6.2vw;
+    }
+
+    .right_words {
+        padding-left: 13vw;
+        text-align: left;
+    }
+
+    .header_buttons {
+        margin-top: 27.8vw;
+        display: block;
+        margin-left: 6.2vw;
+        width: 87.5vw;
+    }
+
+    .button_link {
+        width: 87.5vw;
+        height: 11vw;
+        padding-left: 25.5vw;
+    }
+
+    .button_link:nth-child(2) {
+        margin-top: 4.6vw;
+        padding-left: 25.5vw;
+    }
+
+    .logo_button {
+        margin-right: 2.3vw;
+    }
+
+    .logo_apple {
+        width: 6vw;
+        height: 5.8vw;
+    }
+
+    .logo_google {
+        width: 6vw;
+        height: 5.8vw;
+    }
+
+    .button_text {
+        font-size: 2.5vw;
+        margin-bottom: 2px;
+    }
+
+    .list {
+        padding-top: 7.5vw;
+        position: static;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .odd_image {
+        margin-left: auto;
+        margin-right: auto;
+        width: 52.8vw;
+        order: 2;
+        margin-top: 3.5vw;
+    }
+
+    .athlets_image,
+    .player_image {
+        width: 100%;
+        position: static;
+    }
+
+    .odd_header,
+    .even_header {
+        padding-left: 6.5vw;
+    }
+
+    .list_title {
+        font-size: 15.6vw;
+        line-height: 18.7vw;
+        order: 1;
+    }
+
+    .odd_content,
+    .even_content {
+        order: 3;
+    }
+
+    .odd_item,
+    .even_item {
+        padding-left: 6.5vw;
+        padding-right: 7.8vw;
+        padding-top: 9vw;
+        padding-bottom: 16.7vw;
+    }
+
+    .number_item,
+    .number_item_another,
+    .number_item_even_another {
+        font-size: 4.3vw;
+        margin-right: 2.8vw;
+    }
+
+    .number_item::after,
+    .number_item_another::after,
+    .number_item_even_another::after {
+        width: 4.6vw;
+        height: 0.8vw;
+        margin-left: 0.1vw;
+    }
+
+    .title_odd_item,
+    .title_even_item {
+        font-size: 7.1vw;
+        line-height: 8vw;
+    }
+
+    .text_odd_item,
+    .text_odd_item_another,
+    .text_even_item,
+    .text_even_item_another {
+        margin-top: 8.8vw;
+        font-size: 4.6vw;
+        line-height: 5.6vw;
+    }
+
+    .even_image {
+        width: 93.7vw;
+        margin-top: 3.5vw;
+        margin-left: auto;
+        margin-right: auto;
+        order: 2;
+    }
+
+    .cascade,
+    .cascade_even {
+        flex-direction: column;
+    }
+
+    .cascade_image {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .cascade_picture {
+        height: 109.6vw;
+    }
+
+    .number_text {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8.6vw;
+        font-size: 4.3vw;
+    }
+
+    .number_text::after {
+        width: 4.3vw;
+        height: 0.8vw;
+        margin-top: 1.5vw;
+        margin-left: 0.2vw;
+    }
+
+    .cascade_content_wrapper {
+        width: 100%;
+        padding-left: 6.2vw;
+        padding-top: 10.5vw;
+        padding-bottom: 25vw;
+        padding-right: 6vw;
+    }
+
+    .cascade_number {
+        width: 21.8vw;
+        height: 21.8vw;
+        top: 91.5vw;
+        left: 6.2vw;
+    }
+
+    .cascade_title {
+        font-size: 8.7vw;
+    }
+
+    .cascade_description {
+        margin-top: 6.8vw;
+    }
+
+    .cascade_text {
+        font-size: 5vw;
+        line-height: 6.2vw;
+    }
+
+    .footer-wrapper {
+        background-image: url("../images/game_767.jpg");
+    }
+
+    .footer_content {
+        padding-top: 30.9vw;
+        padding-bottom: 3.1vw;
+    }
+
+    .footer_header {
+        flex-direction: column;
+        width: 87.5vw;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-logo {
+        width: 22.5vw;
+        height: 23.1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 18.1vw;
+        height: 18.1vw;
+    }
+
+    .logo_title {
+        margin-left: 0;
+        margin-top: 18.1vw;
+        text-align: center;
+    }
+
+    .logo_title_main {
+        font-size: 10vw;
+    }
+
+    .logo_title_description {
+        font-size: 4.3vw;
+    }
+
+    .footer_buttons {
+        margin-top: 23.7vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25vw;
+        width: 87.5vw;
+        display: block;
+    }
+}
