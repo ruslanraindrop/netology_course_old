@@ -1,0 +1,56 @@
+.manager-box {
+  width: 400px;
+  margin: 0 auto;
+
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  color: gray;
+
+  border: 2px solid brown;
+  border-radius: 20px;
+}
+
+
+.messages-box {
+  box-sizing: border-box;
+  width: 95%;
+  min-height: 200px;
+  max-height: 400px;
+
+  margin: 10px auto;
+
+  overflow: scroll;
+}
+
+.message-box {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.icon-box {
+  width: 10%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 30px 30px;
+}
+
+[data-type="goal"] .icon-box {
+  background-image: url("../img/ball.png");
+}
+
+[data-type="freekick"] .icon-box {
+  background-image: url("../img/exclam.png");
+}
+
+.message-wrapper {
+  box-sizing: border-box;
+  width: 90%;
+  padding-left: 10px;
+}
+
+.message-time {
+  margin-bottom: 5px;
+  font-style: italic;
+  font-size: 14px;
+}

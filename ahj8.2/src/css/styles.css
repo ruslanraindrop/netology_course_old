@@ -1,0 +1,182 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.chat-widget-box {
+  box-sizing: border-box;
+  position: relative;
+  width: 600px;
+  margin-left: 200px;
+  margin-top: 100px;
+
+  border: 2px solid gray;
+  border-radius: 20px;
+}
+
+.user-message_box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.user-message_box:hover {
+  box-sizing: border-box;
+  padding: 5px;
+
+  background-color: yellow;
+  border: 2px solid red;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.user-message_header {
+  margin-bottom: 10px;
+}
+
+[data-current-user="true"] {
+  color: red;
+  font-style: italic;
+}
+
+[data-current-msg="true"] {
+  align-items: flex-end;
+}
+
+[data-current-msg="true"] .user-message_header {
+  color: red;
+}
+
+.chat-widget_main-content {
+  box-sizing: border-box;
+  min-height: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-right: 5px;
+
+  overflow-y: scroll;
+}
+
+.users-online-box {
+  box-sizing: border-box;
+  position: absolute;
+  left: -152px;
+  top: 20px;
+
+  min-height: 150px;
+  max-height: 200px;
+  width: 150px;
+  padding: 10px;
+
+  border: 2px solid gray;
+  border-right: none;  
+  border-top-left-radius: 10px; 
+  border-bottom-left-radius: 10px; 
+
+  overflow-y: scroll;
+}
+
+.user-online_box {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-online_avatar {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+
+  border: 2px solid gray;
+  border-radius: 50%;
+  background-color: cyan;
+}
+
+[data-current="true"] {
+  color: red;
+  font-style: italic;
+}
+
+[data-current="true"] .user-online_avatar{
+  background-color: green;
+}
+
+
+.chat-widget-footer {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.chat_text-field {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  padding: 5px 10px;
+
+  border: 2px solid gray;
+  border-radius: 10px;
+
+  outline: none;
+  resize: none;
+}
+
+.modal {
+  box-sizing: border-box;
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  padding: 20px;
+  
+  background-color: white;
+  border: 2px solid gray;
+  border-radius: 20px;
+}
+
+.form-title {
+  margin-bottom: 10px;
+}
+
+.register-modal-input {
+  box-sizing: border-box;
+  width: 80%;
+  height: 40px;
+  margin-bottom: 10px;
+
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.modal-btn {
+  box-sizing: border-box;
+  width: 150px;
+  height: 30px;
+
+  border: 2px solid gray;
+  border-radius: 5px;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.modal-btn:active {
+  transform: scale(0.95);
+  transition: transform 0.25s;
+}
+
+.hidden {
+  display: none;
+}
+
+.blocked {
+  pointer-events: none;
+}

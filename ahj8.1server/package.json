@@ -1,0 +1,23 @@
+{
+  "name": "ahj8.1server",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "repository": "https://github.com/ruslanraindrop/ahj8.1server.git",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "forever router/server.js",
+    "watch": "forever -w router/server.js"
+  },
+  "author": "Coursar",
+  "license": "MIT",
+  "dependencies": {
+    "forever": "^3.0.2",
+    "http-event-stream": "^0.2.0",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-router": "^9.4.0",
+    "koa-static": "^5.0.0",
+    "moment": "^2.29.0",
+    "uuid": "^8.3.0"
+  }
+}

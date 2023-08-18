@@ -1,0 +1,50 @@
+.widget-collapse {
+  display: flex;
+  justify-content: center;
+}
+
+.collapse {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.collapse-btn {
+  width: 80px;
+  height: 40px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;   
+  background-color: dodgerblue;
+  border: 3px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.collapse-btn:hover {
+  border-color: skyblue;
+  transition: border-color linear;
+}
+
+.collapse-content {
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 0px;
+  max-height: 300px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  transition: max-height 0.7s linear;
+}
+
+.text{
+  margin: 0;
+  padding: 10px;
+}
+
+.collapse-hidden {
+  max-height: 0;
+  transition: max-height 0.7s linear;
+}
