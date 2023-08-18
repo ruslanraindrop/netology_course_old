@@ -1,0 +1,21 @@
+.gameboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40vw;
+  height: 40vw;
+  margin: auto;
+  border:  1px solid blue; 
+}
+
+.cell {
+  width: 25%;
+  height: 25%;
+  border:  1px solid blue;
+  box-sizing: border-box;
+  display: flex;
+}
+
+img {
+ width: 80%;
+ margin: auto;
+}

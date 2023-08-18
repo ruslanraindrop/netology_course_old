@@ -1,0 +1,26 @@
+.card_forms {
+  text-align: center;
+  margin: auto;
+  width: 50vw;
+  margin-top: 80px;
+}
+
+.cards_list {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.cards_item {
+  width: 50px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  opacity: 50%;
+}
