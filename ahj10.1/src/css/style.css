@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.submit {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.input_message {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.messenger {
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    padding: 10px;
+    border: 2px solid #000000;
+    margin: 10px;
+    position: relative;
+    height: 50px;
+}
+
+.time {
+    position: absolute;
+    left: 80%;
+}
+
+.location {
+    position: absolute;
+    top: 60%;
+    left: 10px;
+}
+
+.modal {
+    border: 2px solid #000000;
+    width: 350px;
+    height: 180px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 40%;
+    left: 40%;
+    opacity: 100%;
+    background: #ffffff;
+}
+
+.cancel {
+    margin-top: 8px;
+}
+
+.accept {
+    margin-top: 2px;
+}
